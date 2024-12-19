@@ -4,9 +4,10 @@ var ParCheck = false;
 var parCount = 0;
 
 
-
-
 function EnterNum(input) {
+    CheckForPar();
+    Cleanup();
+    
     const enterField = document.getElementById('enterfield');
     
     // Helper function to append a value to the input field
@@ -14,8 +15,6 @@ function EnterNum(input) {
         enterField.value += value;
     };
 
-    CheckForPar();
-    Cleanup();
 
     if (typeof input === 'number' && input >= 0 && input <= 9) {
         // Handle numbers
