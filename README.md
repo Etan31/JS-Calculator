@@ -20,9 +20,9 @@ The original project is available at:
 This project inherits the license from the original repository. Please refer to the original repository for license details.
 
 ## Modifications in This Fork
-
 - Added GitHub Pages deployment for easier accessibility.
-- [List any other changes you’ve made, if applicable.]
+- Refactor to make the script more clear and scalable.
+- Responsive button sizes.
 
 ---
 
