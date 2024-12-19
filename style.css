@@ -12,7 +12,7 @@ body{
 }
 
 .container{   
-    height: 100%;
+    height: fit-content;
     width: clamp(450px, 5vw, 600px);
     position: relative;
     border: 5px solid rgb(14, 13, 13);
@@ -44,8 +44,7 @@ body{
 
 }
 .buttons button{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-block: 4px; 
     align-self: center;
     border-radius: 30px;
     font-size: xx-large;
