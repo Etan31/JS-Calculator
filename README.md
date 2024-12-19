@@ -23,6 +23,7 @@ This project inherits the license from the original repository. Please refer to 
 - Added GitHub Pages deployment for easier accessibility.
 - Refactor to make the script more clear and scalable.
 - Responsive button sizes.
+- Added Non-Linear operations such as square root, power, logarithm, Sine.
 
 ---
 
