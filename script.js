@@ -114,6 +114,37 @@ function EnterOperator(n){
     }
 }
 
+function nonLinearOperation(operation) {
+    Cleanup();
+    const inputField = document.getElementById('enterfield');
+    let calculationField = inputField.value.trim();
+
+    // Safely parse the input to avoid eval where possible
+    const parsedValue = parseFloat(calculationField);
+    if (isNaN(parsedValue) && operation !== '^') {
+        inputField.value = 'Error';
+        return;
+    }
+
+    switch (operation) {
+        case '√': // Square Root
+            inputField.value = Math.sqrt(parsedValue);
+            break;
+        case '^': // Power
+            inputField.value += '**'; 
+            break;
+        case 'log': // Logarithm
+            inputField.value = Math.log10(parsedValue);
+            break;
+        case 'sin': // Sine (convert to radians)
+            inputField.value = Math.sin((parsedValue * Math.PI) / 180);
+            break;
+        default:
+            inputField.value = 'Invalid Operation';
+            break;
+    }
+}
+
 function CheckForPar(){
     if(parCount == 0){
         ParCheck = false;
